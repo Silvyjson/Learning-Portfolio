@@ -16,7 +16,7 @@ const hideNavOnScroll = () => {
   menuIcon.classList.remove("open");
 }
 
-document.body.addEventListener('click', function(event) {
+document.body.addEventListener('click', function (event) {
 
   if (!event.target.closest('.Navsection') && !event.target.closest('.dropdown-content a')) {
     hideNavOnScroll();
@@ -35,7 +35,7 @@ window.addEventListener('scroll', hideNavOnScroll);
 
 let counter = 1;
 
-setInterval(function() {
+setInterval(function () {
   document.getElementById('slide' + counter).checked = true;
   counter++;
   if (counter > 6) {
@@ -76,7 +76,7 @@ function updateCounters() {
 
 
 function startCountdownOnScroll() {
-  const scrollThreshold = 200; 
+  const scrollThreshold = 200;
   const scrollY = window.scrollY || window.pageYOffset;
 
   if (scrollY > scrollThreshold) {
