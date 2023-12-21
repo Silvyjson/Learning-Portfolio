@@ -1,0 +1,660 @@
+body {
+    background-color: #000;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+b {
+    margin-left: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #0074cc;
+}
+
+/* The Navsection */
+
+.ms-icon {
+  width: 100px;
+  height: 30px;
+    padding-left: 20px;
+    float: left;
+}
+
+.Navbar,
+.Footer_Navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 10%) 15% repeat(2, 10%);
+    text-align: center;
+}
+
+.Navbar {
+    justify-content: right;
+}
+
+.Footer_Navbar {
+    justify-content: center;
+}
+
+.Navsection {
+    display: none;
+    border: 1px solid transparent;
+    margin: 15px 0 30px 0;
+    height: 100%;
+}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0 0 0;
+    padding: 20px 0;
+    color: white;
+}
+
+.dropdown-content li {
+    /* border-bottom: 2px solid rgb(27, 52, 162); */
+    text-align: center;
+}
+
+#nav {
+    display: none;
+    position: fixed;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    margin-top: 20px;
+    background-color: #000;
+    transition: height 0.2s, width 0.1s;
+    z-index: 1;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 25px;
+    display: inline-block;
+    cursor: pointer;
+    clear: both;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.bar_icon--sect {
+    display: flex;
+    gap: 20px;
+    padding: 15px 10px 0 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.bar {
+    height: 4px;
+    margin: 6px 0;
+    background-color: #0074cc;
+    transition: 0.4s;
+}
+
+.bar1 {
+    width: 20px;
+}
+
+.bar2 {
+    width: 15px;
+}
+
+.menu-icon.open .bar:nth-child(1) {
+    width: 20px;
+    transform: rotate(-45deg) translate(-3px, 3px);
+}
+
+.menu-icon.open .bar:nth-child(2) {
+    width: 20px;
+    transform: rotate(45deg) translate(-4px, -4px);
+}
+
+
+
+/* The Body section*/
+
+.Intr0_section {
+    margin-top: 5px;
+}
+
+.myname,
+.myname1 {
+    font-family: Segoe 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.myname {
+    float: left;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 900;
+    background-image: linear-gradient(to right, #3498db, #2980b9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 8);
+    text-align: center;
+}
+
+.top {
+    height: auto;
+}
+
+.Myprofile,
+.get-in-touchImg {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.p {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.Gitbutton {
+    background-image: linear-gradient(to right, #3952b8, #0a054a);
+    height: 50px;
+    border-color: transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Gitbutton a {
+    color: red;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 900;
+    background-image: linear-gradient(to right, #3498db, #6c7b8b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 8);
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: #0074cc;
+    font-weight: bolder;
+}
+
+.framework-icon {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.SkillSet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 100px;
+}
+
+.skills, .adskills, .meter{
+    border: 3px solid #0074cc;
+}
+
+
+.frontendImg {
+    height: 220px;
+    width: 400px;
+    border-radius: 15px 50px;
+}
+
+.Technologies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    justify-content: center;
+
+}
+
+.skillList {
+    padding-left: 0;
+    margin-left: 20px;
+}
+
+.meter{
+    padding-top: 30px;
+}
+
+meter {
+    width: 50%;
+}
+
+meter::-webkit-meter-bar {
+    background: #ccc;
+}
+
+meter::-webkit-meter-optimum-value {
+    background: linear-gradient(to right, #8599f3, #200869)
+}
+
+ul {
+    list-style-type: none;
+}
+
+.projects {
+    border: 3px solid #0074cc;
+    background: linear-gradient(to right, #8599f3, #5b38c4, #326aaa);
+    border-radius: 10px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: 20px 0;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h5 {
+    text-align: center;
+}
+
+
+/* The slideshow */
+
+.slide_section {
+    position: relative;
+}
+
+.slideshow input[type="radio"] {
+    display: none;
+}
+
+.slideshow {
+    border-top: 2px solid #0074cc;
+    border-bottom: 2px solid #0074cc;
+    height: 230px;
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.slide-container {
+    display: grid;
+    grid-template-columns: repeat(12, 30%);
+    gap: 20px;
+    justify-content: left;
+    transform: translateX(0);
+    transition: transform 1s ease;
+}
+
+
+.slideImg {
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    float: left;
+    opacity: 0.9;
+}
+
+.navigation {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.navigation label {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #333;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: width 0.3s ease;
+}
+
+#slide1:checked~.slide-container {
+    transform: translateX(0%);
+}
+
+#slide2:checked~.slide-container {
+    transform: translateX(-25%);
+}
+
+#slide3:checked~.slide-container {
+    transform: translateX(-50%);
+}
+
+#slide4:checked~.slide-container {
+    transform: translateX(-75%);
+}
+
+#slide5:checked~.slide-container {
+    transform: translateX(-100%);
+}
+
+#slide6:checked~.slide-container {
+    transform: translateX(-150%);
+}
+
+#slide1:checked~.navigation label:nth-child(1),
+#slide2:checked~.navigation label:nth-child(2),
+#slide3:checked~.navigation label:nth-child(3),
+#slide4:checked~.navigation label:nth-child(4),
+#slide5:checked~.navigation label:nth-child(5),
+#slide6:checked~.navigation label:nth-child(6) {
+    background: rgb(23, 53, 172);
+}
+
+/* The contact section */
+
+.Contact_section {
+    height: auto;
+    padding: 30px 0;
+}
+
+.Contact_info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px 100px;
+}
+
+.get-in-touch {
+    background-color: rgb(115, 200, 247);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.socialmedia {
+    text-align: center;
+}
+
+.contactButton,
+.downloadCV {
+    border-radius: 50px;
+    background-color: rgba(86, 134, 229, 0.909);
+    border-color: white;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    animation: blink 5s infinite;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #6ac1f7;
+    }
+
+    25% {
+        background-color: #3560e2;
+    }
+
+    50% {
+        background-color: #9899f3;
+    }
+
+    100% {
+        background-color: #6d5db4;
+    }
+}
+
+/* The Footer Section */
+
+.myfooterStlye {
+    text-align: center;
+    padding: 30px 0 10px 0;
+}
+
+.ms-icon1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.whatsaap-icon,
+.phone-icon {
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+}
+
+.whatsaap-img {
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+    z-index: 1;
+}
+
+.phone-icon {
+    position: fixed;
+    right: 0;
+    bottom: 70px;
+    z-index: 1;
+}
+
+/* The Media Queries */
+
+@media screen and (max-width: 1000px) {
+    .Navbar {
+        display: grid;
+        grid-template-columns: repeat(2, 90px) 120px repeat(2, 90px);
+    }
+
+    .myform {
+        margin-top: 20px;
+    }
+
+    .myinput,
+    .subject-input {
+        width: 100%;
+        height: 40px;
+    }
+
+    .input3 {
+        margin-top: 3px;
+    }
+
+    .message-input {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .SkillSet {
+        display: block;
+        padding: 20px;
+    }
+
+    .frontendImg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .Navbar,
+    .Footer_Navbar {
+        grid-template-columns: repeat(2, 70px) 100px repeat(2, 80px);
+    }
+
+    .myname {
+        font-size: 13px;
+    }
+
+    .Contact_section {
+        height: auto;
+        padding: 20px;
+    }
+
+    .myinput,
+    .subject-input {
+        width: 100%;
+        height: 30px;
+    }
+
+    .message-input {
+        width: 100%;
+        height: 70px;
+    }
+
+    .SkillSet {
+        display: block;
+        padding: 20px;
+    }
+
+    .Technologies {
+        display: block;
+        padding: 20px;
+    }
+
+    meter {
+        width: 60%;
+    }
+
+    .meter {
+        margin-left: 20px;
+        border: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .Header_section {
+        display: none;
+    }
+
+    .Navsection {
+        display: block;
+    }
+
+    .Contact_info {
+        padding: 20px;
+    }
+
+
+    .SI {
+        display: none;
+    }
+
+    .slide-container {
+        display: grid;
+        grid-template-columns: repeat(10, 50%);
+    }
+
+    #slide1:checked~.slide-container {
+        transform: translateX(0%);
+    }
+
+    #slide2:checked~.slide-container {
+        transform: translateX(-50%);
+    }
+
+    #slide3:checked~.slide-container {
+        transform: translateX(-90%);
+    }
+
+    #slide4:checked~.slide-container {
+        transform: translateX(-145%);
+    }
+
+    #slide5:checked~.slide-container {
+        transform: translateX(-180%);
+    }
+
+    #slide6:checked~.slide-container {
+        transform: translateX(-230%);
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .Footer_Navbar {
+        display: grid;
+        grid-template-columns: repeat(2, 60px) 100px repeat(2, 70px);
+        justify-content: center;
+    }
+
+    .frontendImg {
+        height: 200px;
+        width: 200px;
+    }
+
+    .SkillSet {
+        padding-left: 1px;
+    }
+
+    .projects {
+        display: block;
+        text-align: center;
+    }
+
+    .whatsaap-icon,
+    .phone-icon {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .Footer_Navbar {
+        display: block;
+        text-align: center;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .Footer_Navbar li {
+        margin-top: 5px;
+    }
+
+    .input1 {
+        display: block;
+    }
+
+    .input2 {
+        margin-top: 5px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .slide-container {
+        display: grid;
+        grid-template-columns: repeat(10, 60%);
+    }
+}
+
+@media screen and (max-width:280px) {
+    .navigation label {
+        width: 8px;
+        height: 8px;
+    }
+}
